@@ -13,4 +13,12 @@ module MyCounterAddr::MyCounter {
         let counter = borrow_global_mut<Counter>(Signer::address_of(account));
         counter.value = counter.value + 1;
     }
+
+    public entry fun init_counter(account: signer) {
+        Self::init(&account);
+    }
+
+    public entry fun incr_counter(account: signer) acquires Counter {
+        Self::incr(&account);
+    }
 }

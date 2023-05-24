@@ -9,3 +9,4 @@ StarcoinFramework = { git = "https://github.com/starcoinorg/starcoin-framework.g
 #MyCounterAddr =  "0x6a239daba1c29d1047fdea1482bc9107"
 #StarcoinFramework = "0x2"
 MyModuleAddr = "0x6855ee1e49777457cc1b02c718074135"
+Chef = "0xf2aa2eae4ceaae88b308fc904975e4ae"

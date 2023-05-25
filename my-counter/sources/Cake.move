@@ -25,8 +25,8 @@ module Chef::Cake {
         Token::burn(account, cake);
     }
 
-    public fun send_cake(_to: address, cake: Token::Token<Cake>) {
-        Account::deposit(@Chef, cake);
+    public fun send_cake(to: address, cake: Token::Token<Cake>) {
+        Account::deposit(to, cake);
     }
 
     public fun add(x: u128, y: u128) : u128 {
